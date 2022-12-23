@@ -1,0 +1,10 @@
+{
+  "$kind": "Microsoft.VirtualAgents.Topic",
+  "$designer": {
+    "name": "Search knowledge article private topic",
+    "description": "",
+    "link": "https://web.powerva.microsoft.com/environments/b1020df7-f348-423f-9bd6-7f8bb5112eb3/bots/4322cc09-e21a-48c3-8e4a-fb215682c8b2/dialog/msdyn_topic_9688398bfc794abe90edab4943d1893f"
+  },
+  "id": "msdyn_topic_9688398bfc794abe90edab4943d1893f",
+  "isSystemTopic": false
+}

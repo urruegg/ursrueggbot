@@ -1,8 +1,9 @@
 {
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
-    "name": "ursrueggbot",
-    "id": "000000"
+    "name": "ursrueggchatbot",
+    "id": "000000",
+    "description": ""
   },
   "autoEndDialog": true,
   "defaultResultProperty": "dialog.result",
