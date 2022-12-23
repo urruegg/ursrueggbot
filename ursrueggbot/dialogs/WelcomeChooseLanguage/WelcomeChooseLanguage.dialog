@@ -1,0 +1,107 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "iHurv9",
+    "name": "WelcomeChooseLanguage",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "ZytqhD"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "Q3TLZf"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ChoiceInput_Prompt_Q3TLZf()}",
+          "choiceOptions": {
+            "includeNumbers": true
+          },
+          "property": "conversation.LanguageChoice",
+          "choices": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "4vfpj2"
+          },
+          "condition": "conversation.LanguageChoice",
+          "cases": [
+            {
+              "value": "1",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "N8K8Ia"
+                  },
+                  "property": "virtualagent.va_CustomerLocale",
+                  "value": "en-US"
+                }
+              ]
+            },
+            {
+              "value": "2",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "bbqwTQ"
+                  },
+                  "property": "virtualagent.va_CustomerLocale",
+                  "value": "fr-FR"
+                }
+              ]
+            },
+            {
+              "value": "3",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "eJH9LP"
+                  },
+                  "property": "virtualagent.va_CustomerLocale",
+                  "value": "de-DE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "ehR6nA"
+          },
+          "activityProcessed": true,
+          "dialog": "new_topic_2406831324864818a887e9474326e439_954135cafcd647eaae5999ad91fc08cf_talktoagent"
+        }
+      ]
+    }
+  ],
+  "generator": "WelcomeChooseLanguage.lg",
+  "recognizer": {
+    "$kind": "Microsoft.VirtualAgents.Recognizer"
+  },
+  "id": "WelcomeChooseLanguage"
+}

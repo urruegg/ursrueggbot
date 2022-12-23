@@ -1,0 +1,17 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_Q3TLZf()
+[Activity
+    Speak = ${ChoiceInput_Prompt_Q3TLZf_speak()}
+]
+
+# ChoiceInput_Prompt_Q3TLZf_speak()
+- ```<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en\-US">
+    <voice name="en\-US\-JennyMultilingualNeural">
+        <lang xml:lang="en\-US">Press or say 1 for English.</lang>
+        <break strength="medium"/>
+        <lang xml:lang="fr\-FR"> Appuyez ou dites 2 pour le français.</lang>
+        <break strength="medium"/>
+        <lang xml:lang="de\-DE"> Wählen Sie 3 für deutsch.</lang>
+    </voice>
+</speak>```

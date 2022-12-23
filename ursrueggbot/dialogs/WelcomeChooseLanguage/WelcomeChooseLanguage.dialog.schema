@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/component/v1.0/component.schema",
+  "$role": "implements(Microsoft.IDialog)",
+  "title": "WelcomeChooseLanguage",
+  "type": "object",
+  "properties": {},
+  "$result": {
+    "type": "object",
+    "properties": {
+      "serviceChoosen": {
+        "type": "string",
+        "description": "Service Choosien",
+        "title": "Service Choosen"
+      }
+    }
+  }
+}
